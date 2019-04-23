@@ -1,0 +1,156 @@
+/* MAIN SECTION */
+
+.main-section-text{
+  text-align: center;
+  margin-top: 35px;
+}
+
+.main-section-text h1{
+  font-family: 'Montserrat';
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.main-section-text p{
+  font-family: 'Roboto';
+  border-bottom: 1px solid black;
+  padding-bottom: 35px;
+}
+
+
+/* TAB */
+.tab-container{
+  width: 100vw;
+}
+
+.tab{
+  display: inline-block;
+  position: relative;
+  width: 49.5%;
+}
+
+.tab button{
+  -webkit-apperance: none;
+  border: none;
+  height: 80px;
+  outline: 0;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tab button:hover{
+  border-bottom: 1px solid black;
+}
+
+.tab button.active {
+  border-bottom: 2px solid black;
+}
+
+#tab1{
+  display: flex;
+}
+
+#tab2{
+  display: none;
+}
+
+/* CARD */
+
+.card-container{
+  display: none;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  width: 80%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.card{
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  padding: 30px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+.card:nth-child(1){
+  margin-right: 10px;
+}
+
+.card h1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card table{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* TABLE */
+
+table th{
+  width: 50%;
+  border: 1px solid #888888;
+  margin-left: 2px;
+  padding: 10px;
+  font-family: 'Montserrat'
+}
+
+table td{
+  margin-top: 10px;
+  padding: 10px;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: 'Roboto';
+}
+
+/* SANDWICH PHOTO AREA  */
+
+.sandwich-container img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.checkbox-container{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.checkbox-container label{
+  margin-left: 5px;
+}
+
+#submit-button{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  color: white;
+  outline: 0;
+  background-color: #4178be;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#submit-button:disabled{
+  background-color: #ADD8E6;
+}

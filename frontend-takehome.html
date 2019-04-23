@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>SaaS</title>
+      <link rel="stylesheet" href="style/main.css">
+      <link rel="stylesheet" href="style/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   </head>
+   <body>
+      <div class="main-section-text">
+         <h1>Sandwiches as a Service</h1>
+         <p>Hey! Do you want to receive sandwiches on a monthly basis? Find out more about our pricing and features!</p>
+      </div>
+
+      <div class="tab-container">
+         <div class="tab">
+            <button onclick="tabFunc(event, 'tab1')" class="tab_link active" type="button" name="button">Basic</button>
+         </div>
+         <div class="tab">
+            <button onclick="tabFunc(event, 'tab2')" class="tab_link" type="button" name="button">Gourmet</button>
+         </div>
+      </div>
+
+      <div id="tab1" class="card-container">
+         <div class="card">
+            <h1>Pricing</h1>
+            <table>
+               <thead>
+                  <tr>
+                     <th>🥪s</th>
+                     <th>Basic</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>5 / month</td>
+                     <td>$40</td>
+                  </tr>
+                  <tr>
+                     <td>50 / month</td>
+                     <td>$300</td>
+                  </tr>
+                  <tr>
+                     <td>200 / month</td>
+                     <td>$700</td>
+                  </tr>
+                  <tr>
+                     <td>200+ / month</td>
+                     <td colspan="2">Ask us!</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+
+         <div class="card">
+            <h1>Features</h1>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Feature</th>
+                     <th>Basic</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Free pickles</td>
+                     <td>ⅹ</td>
+                  </tr>
+                  <tr>
+                     <td>Premium mayo</td>
+                     <td>✔</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+
+      <div id="tab2" class="card-container">
+         <div class="card">
+            <h1>Pricing</h1>
+            <table>
+               <thead>
+                  <tr>
+                     <th>🥪s</th>
+                     <th>Gourmet</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>5 / month</td>
+                     <td>$80</td>
+                  </tr>
+                  <tr>
+                     <td>50 / month</td>
+                     <td>$500</td>
+                  </tr>
+                  <tr>
+                     <td>200 / month</td>
+                     <td>$900</td>
+                  </tr>
+                  <tr>
+                     <td>200+ / month</td>
+                     <td colspan="2">Ask us!</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+
+         <div class="card">
+            <h1>Features</h1>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Feature</th>
+                     <th>Gourmet</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Free pickles</td>
+                     <td>✔</td>
+                  </tr>
+                  <tr>
+                     <td>Premium mayo</td>
+                     <td>✔</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+      <div class="sandwich-container">
+         <img src="https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMwMjc3fQ&amp;s=9637e6d5ae5a4e0d3c9781d0151e10ef">
+         <div class="checkbox-container">
+            <input id="checkbox" type="checkbox">
+            <label>By checking this box, I acknowledge I may receive the most delicious sandwich I've ever had.</label>
+         </div>
+         <button onclick="sandwichAlert()" id="submit-button" type="button" name="button" disabled>Send me a Sandwich</button>
+      </div>
+      <script src="js/index.js" type="text/javascript"></script>
+   </body>
+</html>
